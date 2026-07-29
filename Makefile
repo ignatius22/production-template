@@ -24,3 +24,18 @@ ssl:
 
 version:
 	./bin/version
+
+up:
+	docker compose up -d --build
+
+down:
+	docker compose down
+
+build:
+	docker compose build
+
+restart:
+	docker compose restart
+
+ps:
+	docker compose ps

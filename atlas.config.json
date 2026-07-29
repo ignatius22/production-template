@@ -1,0 +1,15 @@
+{
+  "project": "production-template",
+  "version": "0.1.0",
+  "docker": {
+    "composeFile": "docker-compose.yml"
+  },
+  "health": {
+    "endpoint": "http://localhost:3000/health"
+  },
+  "deployment": {
+    "branch": "main",
+    "user": "iggy",
+    "host": "your-vps-ip"
+  }
+}
