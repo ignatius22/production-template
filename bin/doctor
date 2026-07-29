@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+echo "=================================="
+echo " Atlas Platform Doctor"
+echo "=================================="
+
+echo ""
+
+check() {
+    if command -v "$1" >/dev/null 2>&1; then
+        printf "✅ %-18s Installed\n" "$1"
+    else
+        printf "❌ %-18s Missing\n" "$1"
+    fi
+}
+
+check git
+check docker
+check docker-compose
+check node
+check npm
+check make
+
+echo ""
+echo "Platform health check complete."
