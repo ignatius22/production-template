@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+echo ""
+echo "🚀 Atlas Platform CLI"
+echo ""
+echo "Available Commands"
+echo "────────────────────────────────────"
+
+echo "doctor     Check development environment"
+echo "deploy     Deploy application"
+echo "health     Check application health"
+echo "logs       Stream application logs"
+echo "backup     Backup database"
+echo "restore    Restore database"
+echo "ssl        SSL certificate management"
+echo "version    Show CLI version"
+echo "help       Show this help"
+echo ""

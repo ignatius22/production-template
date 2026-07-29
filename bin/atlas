@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+set -e
+
+COMMAND="$1"
+
+case "$COMMAND" in
+
+doctor)
+    ./bin/doctor
+    ;;
+
+deploy)
+    ./bin/deploy
+    ;;
+
+backup)
+    ./bin/backup
+    ;;
+
+restore)
+    ./bin/restore
+    ;;
+
+ssl)
+    ./bin/ssl
+    ;;
+
+logs)
+    ./bin/logs
+    ;;
+
+health)
+    ./bin/health
+    ;;
+
+version)
+    ./bin/version
+    ;;
+
+*)
+    echo ""
+    echo "Atlas Platform CLI"
+    echo ""
+    echo "Usage:"
+    echo ""
+    echo "atlas doctor"
+    echo "atlas deploy"
+    echo "atlas backup"
+    echo "atlas restore"
+    echo "atlas ssl"
+    echo "atlas logs"
+    echo "atlas health"
+    echo "atlas version"
+    echo ""
+    ;;
+esac
