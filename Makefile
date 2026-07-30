@@ -39,3 +39,6 @@ restart:
 
 ps:
 	docker compose ps
+
+logs:
+	docker compose logs -f api
